@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dqetda65t4tdt"]
+
+[ext_resource type="Texture2D" uid="uid://dh610bbucs6rh" path="res://assets/fasilkom.png" id="1_l0aq0"]
+[ext_resource type="Script" uid="uid://db213gyaaqvbs" path="res://scenes/exit.gd" id="1_uyw7u"]
+
+[node name="Node2D" type="Node2D" unique_id=1187570085]
+script = ExtResource("1_uyw7u")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1116966452]
+texture_filter = 1
+position = Vector2(574.00006, 350)
+scale = Vector2(2.6965153, 2.4524748)
+texture = ExtResource("1_l0aq0")
+
+[node name="Button" type="Button" parent="Sprite2D" unique_id=1263014248]
+texture_filter = 1
+offset_left = -74.91152
+offset_top = -117.02464
+offset_right = 77.08848
+offset_bottom = -86.02464
+text = "Press Here To Quit"
+
+[connection signal="pressed" from="Sprite2D/Button" to="." method="_on_button_pressed"]

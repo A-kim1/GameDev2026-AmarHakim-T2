@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://3ruxfsvp87ub" path="res://assets/playerShip1_green.png" id="1_tfqwb"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xgtht"]
-radius = 40.012497
+radius = 38.0
 
 [node name="GreenShip" type="RigidBody2D" unique_id=263254029]
 
