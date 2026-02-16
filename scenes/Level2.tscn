@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://bubbyvfgdow4i"]
+
+[ext_resource type="PackedScene" uid="uid://dv73ke3gi4f40" path="res://scenes/Snow.tscn" id="1_kkoku"]
+[ext_resource type="PackedScene" uid="uid://2l8dbfsh07v1" path="res://scenes/GreenShip.tscn" id="2_l6gr7"]
+[ext_resource type="Script" uid="uid://dcorxus242yb0" path="res://scenes/snow.gd" id="2_sp0w3"]
+
+[node name="Node" type="Node" unique_id=2108726843]
+
+[node name="GreenShip" parent="." unique_id=263254029 instance=ExtResource("2_l6gr7")]
+position = Vector2(106, 435)
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1967549043]
+position = Vector2(39, 610)
+script = ExtResource("2_sp0w3")
+
+[node name="Snow" parent="Node2D" unique_id=1236920188 instance=ExtResource("1_kkoku")]
+
+[node name="Snow2" parent="Node2D" unique_id=1900725922 instance=ExtResource("1_kkoku")]
+position = Vector2(70, 0)
+
+[node name="Snow3" parent="Node2D" unique_id=1929458151 instance=ExtResource("1_kkoku")]
+position = Vector2(140, 0)
+
+[node name="Obstacle1" type="Node2D" parent="." unique_id=1829129967]
+position = Vector2(39, 610)
+script = ExtResource("2_sp0w3")
+
+[node name="Snow2" parent="Obstacle1" unique_id=900418514 instance=ExtResource("1_kkoku")]
+position = Vector2(181, -527)
+
+[node name="Snow" parent="Obstacle1" unique_id=167499933 instance=ExtResource("1_kkoku")]
+position = Vector2(625, -576)
+
+[node name="Snow3" parent="Obstacle1" unique_id=95272757 instance=ExtResource("1_kkoku")]
+position = Vector2(391, -280)
+
+[node name="Snow4" parent="Obstacle1" unique_id=1790895863 instance=ExtResource("1_kkoku")]
+position = Vector2(907, -86)
+
+[node name="Snow5" parent="Obstacle1" unique_id=1682816833 instance=ExtResource("1_kkoku")]
+position = Vector2(787, -354)
+
+[node name="Snow6" parent="Obstacle1" unique_id=2049977146 instance=ExtResource("1_kkoku")]
+position = Vector2(548, -36)

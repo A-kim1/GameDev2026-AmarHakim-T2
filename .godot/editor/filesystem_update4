@@ -1,2 +1,8 @@
 res://default_env.tres
 res://scenes/MainLevel.tscn
+res://scenes/Snow.tscn
+res://scenes/Level2.tscn
+res://scenes/snow.gd
+res://scenes/GreenShip.tscn
+res://scenes/BlueShip.tscn
+res://scenes/StonePlatform.tscn

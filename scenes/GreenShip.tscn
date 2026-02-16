@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://2l8dbfsh07v1"]
+
+[ext_resource type="Texture2D" uid="uid://3ruxfsvp87ub" path="res://assets/playerShip1_green.png" id="1_tfqwb"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xgtht"]
+radius = 40.012497
+
+[node name="GreenShip" type="RigidBody2D" unique_id=263254029]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=779522310]
+texture = ExtResource("1_tfqwb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1356845483]
+shape = SubResource("CircleShape2D_xgtht")
